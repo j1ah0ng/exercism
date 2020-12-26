@@ -1,10 +1,19 @@
 module Acronym (abbreviate) where
 import Data.Char 
 
+gen_acronym :: String -> String
+gen_acronym k
+    | filter isUpper k == k = take 1 k
+    | otherwise             = filter isUpper (toUpper (head k) : tail k)
+
+drop_char :: Char -> Char
+drop_char c
+    | isAlpha c || c == '\''    = c
+    | otherwise                 = ' '
+
+tokenise :: String -> [[Char]]
+tokenise s = words (map drop_char s)
+
 abbreviate :: String -> String
 abbreviate xs = 
-    concat
-    [if (filter isUpper k == k )
-        then (take 1 k) 
-        else (filter isUpper (toUpper (head k) : tail k)) |
-    k <- (words (map (\c -> if (isAlpha c || c == '\'') then c else ' ') xs))]
+    concat [gen_acronym k | k <- tokenise xs]
