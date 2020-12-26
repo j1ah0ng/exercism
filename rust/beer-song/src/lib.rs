@@ -33,11 +33,9 @@ pub fn verse(n: u32) -> String {
 }
 
 pub fn sing(start: u32, end: u32) -> String {
-    let mut s = String::from("");
-    for n in (end + 1..=start).rev() {
-        s.push_str(&verse(n));
-        s.push_str("\n")
-    }
-    s.push_str(&verse(end));
-    return s
+    (end..=start)
+        .rev()
+        .map(|n| verse(n))
+        .collect::<Vec<_>>()
+        .join("\n")
 }
