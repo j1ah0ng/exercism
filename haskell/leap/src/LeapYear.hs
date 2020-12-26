@@ -1,6 +1,11 @@
 module LeapYear (isLeapYear) where
 
 isLeapYear :: Integer -> Bool
-isLeapYear x = if x `mod` 100 == 0
-                  then x `mod` 400 == 0
-                  else x `mod` 4 == 0
+isLeapYear x
+    | x `mod` 4 /= 0        = False
+    -- Divisible by 4.
+    | x `mod` 100 /= 0      = True
+    -- Divisible by 100.
+    | x `mod` 400 == 0      = True
+    -- Divisible by 100, but not by 400.
+    | otherwise             = False
