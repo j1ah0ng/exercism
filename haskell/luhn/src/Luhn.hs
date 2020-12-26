@@ -24,7 +24,6 @@ clean_list :: String -> String
 clean_list xs = reverse (filter isDigit xs)
 
 isValid :: String -> Bool
-isValid [_] = False
 isValid n 
     | tail (clean_list n) == [] = False
     | otherwise =
