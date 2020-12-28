@@ -30,7 +30,7 @@ version = Version [1,4,0,8] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/bin"
-libdir     = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/lib/x86_64-linux-ghc-8.8.4/anagram-1.4.0.8-50VkD91t3bCJc2Aaplxmd4"
+libdir     = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/lib/x86_64-linux-ghc-8.8.4/anagram-1.4.0.8-9gWDoJP3d6sAYO1AURaFv4"
 dynlibdir  = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/lib/x86_64-linux-ghc-8.8.4"
 datadir    = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/share/x86_64-linux-ghc-8.8.4/anagram-1.4.0.8"
 libexecdir = "/home/sushisharkjl/exercism/haskell/anagram/.stack-work/install/x86_64-linux-tinfo6/1b77296d455fbd3d82ca7deac379be79d33916f22ac4bb026bf9da103e615a8d/8.8.4/libexec/x86_64-linux-ghc-8.8.4/anagram-1.4.0.8"

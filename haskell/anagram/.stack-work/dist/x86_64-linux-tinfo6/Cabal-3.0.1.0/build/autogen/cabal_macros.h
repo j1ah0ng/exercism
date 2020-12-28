@@ -22,6 +22,17 @@
   (major1) == 4 && (major2) == 13 && (minor) <= 0)
 #endif /* MIN_VERSION_base */
 
+/* package containers-0.6.2.1 */
+#ifndef VERSION_containers
+#define VERSION_containers "0.6.2.1"
+#endif /* VERSION_containers */
+#ifndef MIN_VERSION_containers
+#define MIN_VERSION_containers(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  6 || \
+  (major1) == 0 && (major2) == 6 && (minor) <= 2)
+#endif /* MIN_VERSION_containers */
+
 /* tool alex-3.2.5 */
 #ifndef TOOL_VERSION_alex
 #define TOOL_VERSION_alex "3.2.5"
@@ -155,10 +166,10 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_PACKAGE_KEY
-#define CURRENT_PACKAGE_KEY "anagram-1.4.0.8-50VkD91t3bCJc2Aaplxmd4"
+#define CURRENT_PACKAGE_KEY "anagram-1.4.0.8-9gWDoJP3d6sAYO1AURaFv4"
 #endif /* CURRENT_PACKAGE_KEY */
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "anagram-1.4.0.8-50VkD91t3bCJc2Aaplxmd4"
+#define CURRENT_COMPONENT_ID "anagram-1.4.0.8-9gWDoJP3d6sAYO1AURaFv4"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "1.4.0.8"
